@@ -14,7 +14,7 @@ function App() {
   // Routing: 'home' | 'blog'
   const [route, setRoute] = useState(() => {
     const hash = window.location.hash;
-    if (hash === '#blog/dieu-minh-hoc-duoc-trong-nam-dau-tien-lam-tu-do') {
+    if (hash === '#blog/minh-la-ai') {
       return 'blog';
     }
     return 'home';
@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
-      if (hash === '#blog/dieu-minh-hoc-duoc-trong-nam-dau-tien-lam-tu-do') {
+      if (hash === '#blog/minh-la-ai') {
         setRoute('blog');
       } else {
         setRoute('home');
